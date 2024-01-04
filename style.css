@@ -1,0 +1,9 @@
+html, body {
+    height: 100;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+.solution-link{
+    font-size: 30px;
+}
