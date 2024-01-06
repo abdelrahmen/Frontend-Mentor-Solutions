@@ -1,21 +1,19 @@
-html,
 body {
-    height: 100%;
+    min-height: 100vh;
     font-family: 'Outfit', sans-serif;
     margin: 0;
-}
-
-.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     background-color: hsl(212, 45%, 89%);
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .card {
     padding: 22px;
-    width: 20%;
+    margin: 1rem;
+    max-width: 20rem;
     border-radius: 20px;
     background-color: white;
     text-align: center;
@@ -25,35 +23,26 @@ body {
     padding-bottom: 40px;
 }
 
-.qrcode {
-    width: 100%;
+.qrcode-image {
+    max-width: 100%;
     border-radius: 15px;
+    display: block
 }
 
 .bold {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.5rem;
     color: hsl(218, 44%, 22%);
 }
 
 .lite {
-    font-weight: 400;
-    font-size: 21px;
+    font-size: 1.2rem;
     color: gray;
     max-width: 88%;
     margin-top: -15px;
 }
 
-@media screen and (max-width: 375px) {
-    .card {
-        width: 75%;
-    }
-    .bold{
-        font-size: 22px;
-    }
-    .lite{
-        font-size: 18px;
-        max-width: 100%;
-
-    }
+footer {
+    position: fixed;
+    bottom: 0;
 }
